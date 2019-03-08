@@ -96,6 +96,16 @@ Plug 'w0rp/ale'
 Plug 'Yggdroot/indentline'
 call plug#end()
 
+let g:ale_c_gcc_options='-std=c11 -Wall'
+let g:ale_cpp_gcc_options='-Wall -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE'
+let b:ale_linters = ['flake8']
+let b:ale_fixers = [
+\   'remove_trailing_lines',
+\   'isort',
+\   'ale#fixers#generic_python#BreakUpLongLines',
+\   'yapf',
+\]
+
 set showcmd
 
 if has("autocmd")
