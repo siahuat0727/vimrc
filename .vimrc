@@ -10,6 +10,9 @@ Plug 'w0rp/ale'
 Plug 'Yggdroot/indentline'
 Plug 'siahuat0727/vimrc'
 Plug 'tomasr/molokai'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'jeetsukumaran/vim-pythonsense'
 call plug#end()
 
 filetype plugin indent on
