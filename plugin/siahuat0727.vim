@@ -23,7 +23,7 @@ nmap <leader>q :q<cr>
 
 
 " For c
-nmap <leader>c i#include <stdio.h><cr><cr>int main()<cr>{<cr>return0;<cr>}<esc>kO
+nmap <leader>c i#include <stdio.h><cr><cr>int main()<cr>{<cr>return 0;<cr>}<esc>kO
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
@@ -71,11 +71,11 @@ set ignorecase
 set autoindent
 set smartindent
 set nowrap
+set noswapfile
 set clipboard=unnamedplus
 
 :imap jj <esc>
 :imap jk <esc>
-:imap kj <esc>
 
 vmap <TAB> >gv
 vmap <S-TAB> <gv
@@ -85,15 +85,15 @@ vmap <S-TAB> <gv
 
 set nocompatible
 
-let g:ale_c_gcc_options='-std=c11 -Wall'
-let g:ale_cpp_gcc_options='-Wall -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE'
-let b:ale_linters = ['flake8']
-let b:ale_fixers = [
-\   'remove_trailing_lines',
-\   'isort',
-\   'ale#fixers#generic_python#BreakUpLongLines',
-\   'yapf',
-\]
+# let g:ale_c_gcc_options='-std=c11 -Wall'
+# let g:ale_cpp_gcc_options='-Wall -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE'
+# let b:ale_linters = ['flake8']
+# let b:ale_fixers = [
+# \   'remove_trailing_lines',
+# \   'isort',
+# \   'ale#fixers#generic_python#BreakUpLongLines',
+# \   'yapf',
+# \]
 
 set showcmd
 
@@ -115,9 +115,9 @@ endfunction
 autocmd BufWritePre * call RemoveTrailingWhitespace()
 
 "Fast reloading of the .vimrc
-map <leader>s :source ~/.vimrc<cr>
+map <leader>s :source ~/.vim/plugged/vimrc/plugin/siahuat0727.vim <cr>
 "Fast editing of .vimrc
-map <leader>e :tabe ~/.vimrc<cr>
+# map <leader>e :tabe ~/.vim/plugged/vimrc/plugin/siahuat0727.vim
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
