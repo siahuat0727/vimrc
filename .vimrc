@@ -30,9 +30,8 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
 
 
+let mapleader = ","
 map <leader>s :source ~/.vimrc <cr>
-" "Fast editing of .vimrc
-map <leader>e :tabe ~/.vimrc <cr>
 
 map <leader>t :NERDTreeToggle<CR>
 
