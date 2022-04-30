@@ -20,5 +20,12 @@ sudo pacman -S yarn nodejs npm
 curl -L https://raw.githubusercontent.com/siahuat0727/vimrc/master/setup.sh | bash
 ```
 
+## Usage
+
+```
+git clone git@github.com:siahuat0727/vimrc.git
+ln -s path/to/vimrc/.vimrc ~/.vimrc
+```
+
 ## Reference
 https://github.com/aben20807/aben20807.vim
