@@ -14,6 +14,12 @@ sudo apt -y install yarn nodejs npm
 sudo pacman -S yarn nodejs npm
 ```
 
+#### MacOS
+
+```
+brew install yarn npm nodejs
+```
+
 ## Installation
 
 ```
