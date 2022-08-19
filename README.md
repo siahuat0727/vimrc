@@ -20,6 +20,10 @@ sudo pacman -S yarn nodejs npm
 curl -L https://raw.githubusercontent.com/siahuat0727/vimrc/master/setup.sh | bash
 ```
 
+```
+cd .vim/plugged/coc.nvim && yarn install
+```
+
 ## Usage
 
 ```
